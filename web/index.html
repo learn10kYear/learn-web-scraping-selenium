@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo web</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+			$("#btn1").click(function(){
+				window.location.href = "index.html";
+			});
+			$("#btn2").click(function(){
+				window.location.href = "second.html";
+			});
+			$("#btn3").click(function(){
+				window.location.href = "third.html";
+			});
+			
+			$("#text").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus condimentum ultrices. Mauris aliquet ornare felis id tincidunt. Nulla at tellus nec nisl bibendum fermentum id eu diam. Ut at ex tempor, commodo odio nec, dictum tortor. Morbi ultrices, urna non porta feugiat, neque purus tempor libero, vitae ullamcorper massa odio ac eros. Nam tristique vulputate justo, eu consequat sapien maximus sit amet. In hac habitasse platea dictumst. Phasellus in nisi sit amet arcu pellentesque egestas sit amet a enim. Sed ultricies tristique feugiat. Pellentesque sagittis diam libero, vitae fermentum purus vehicula in.");
+		});
+		
+	</script>
+	<style>
+	.myitem {
+		margin-bottom: 20px;
+	 }
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1 class="myitem">Page 1</h1>
+
+<div class="dropdown myitem">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <div class="dropdown-menu">
+    <button id="btn1" class="dropdown-item active" type="button">Page 1</button>
+    <button id="btn2" class="dropdown-item" type="button">Page 2</button>
+    <button id="btn3" class="dropdown-item" type="button">Page 3</button>
+  </div>
+</div>
+
+<img src="img1.jpg" class="img-fluid rounded-sm" >
+
+<div id="text" class="myitem"/>
+
+</body>
+</html>
